@@ -72,8 +72,29 @@ a:hover {
     background-size: auto!important;
 }
 
+.social{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.icon-md{
+
+    margin-right: 25px;
+    color: #2B537B;
+
+}
+
 .bg-repeat {
     background: repeat;
+
+}
+
+.bg-repeat p{
+
+    font-size: 1.2em;
+
 }
 
 .bg-t-edge {
@@ -88,11 +109,6 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-}
-
-.texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
 }
 
 .b-parallax {
@@ -288,6 +304,7 @@ a:hover {
 }
 
 .navbar {
+    width: 98%;
     margin-bottom: 0;
     z-index: 1;
 }
@@ -384,6 +401,9 @@ a:hover {
     .nav-center .navbar-header {
         width: 100%;
     }
+
+
+
     .nav-center .navbar-header,
     .nav-center .navbar-brand,
     .nav-center .nav > li {
@@ -680,6 +700,7 @@ p {
     font-size: 11px;
 }
 
+
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
@@ -691,7 +712,7 @@ p {
 }
 
 .cta-hero {
-    margin-top: 22px;
+    margin-bottom: 22px;
     color: #FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
@@ -737,15 +758,20 @@ h4 {
 
 .white {
     color: #FFFFFF!important;
+    font-size: 1.1em;
+}
+
+.citation{
+
+    font-size: 1.1em;
+    font-style: italic;
+
 }
 
 .portfolio-thumb {
+    position: relative;
     margin-bottom: 24px;
-}
-
-.portfolio-row {
-    margin-bottom: 44px;
-    margin-top: 50px;
+    width: 100%;
 }
 
 .avatar {
@@ -753,7 +779,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(98, 74, 20, .6);
     padding: 40px 40px 40px 40px;
 }
 
@@ -770,12 +796,41 @@ h4 {
     background-color: #364577;
 }
 
+p{
+
+    font-size: 1.1em;
+
+}
+
 .bgc-atomic-tangerine {
     background-color: #F3976C;
+    text-align: center;
+}
+
+h1{
+
+    color: #F3976C!important;
+
+}
+
+.page-container2 header{
+
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.page-container2 footer{
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: white!important;
 }
 
 .btn-atomic-tangerine {
@@ -818,12 +873,14 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("C:/Users/Utilisateur/Desktop/img/la-chouette-agence-banniere.jpg");
 }
 
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
 }
+
+
 
 @media (max-width: 1024px) {
     .bloc {
@@ -1033,10 +1090,67 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .bloc-mob-center-text {
         text-align: center;
     }
+
+
 }
+
+.image_entete{
+
+    width: 60%;
+
+}
+
+.entete{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.form-control{
+
+    width: 95%;
+
+}
+
+.form-group{
+
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#form_1{
+
+    text-align: center;
+
+}
+
+footer{
+
+    text-align: center;
+
+}
+
+@media screen and (min-width: 426px){
+
+.form-control {
+
+    width: 300px;
+    
+}
+
+
+
+}
+
