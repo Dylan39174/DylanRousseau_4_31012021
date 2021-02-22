@@ -44,9 +44,9 @@ a:hover {
     padding-right: 0;
 }
 
-.bloc-lg {
+/*.bloc-lg {
     padding: 100px 50px;
-}
+}*/
 
 .bloc-md {
     padding: 50px;
@@ -72,29 +72,8 @@ a:hover {
     background-size: auto!important;
 }
 
-.social{
-
-    display: flex;
-    justify-content: center;
-
-}
-
-.icon-md{
-
-    margin-right: 25px;
-    color: #2B537B;
-
-}
-
 .bg-repeat {
     background: repeat;
-
-}
-
-.bg-repeat p{
-
-    font-size: 1.2em;
-
 }
 
 .bg-t-edge {
@@ -304,7 +283,6 @@ a:hover {
 }
 
 .navbar {
-    width: 98%;
     margin-bottom: 0;
     z-index: 1;
 }
@@ -401,9 +379,6 @@ a:hover {
     .nav-center .navbar-header {
         width: 100%;
     }
-
-
-
     .nav-center .navbar-header,
     .nav-center .navbar-brand,
     .nav-center .nav > li {
@@ -697,9 +672,14 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 1em;
 }
 
+.citation{
+
+    font-style: italic;
+
+}
 
 .tight-width-whitespace {
     max-width: 600px;
@@ -712,7 +692,6 @@ p {
 }
 
 .cta-hero {
-    margin-bottom: 22px;
     color: #FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
@@ -721,8 +700,9 @@ p {
 }
 
 .social {
-    max-width: 400px;
-    margin: auto auto auto auto;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 h2 {
@@ -737,11 +717,11 @@ h3 {
     color: #333333!important;
 }
 
-.med-width-whitespace {
+/*.med-width-whitespace {
     max-width: 800px;
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
-}
+}*/
 
 h1 {
     color: #333333!important;
@@ -758,20 +738,15 @@ h4 {
 
 .white {
     color: #FFFFFF!important;
-    font-size: 1.1em;
-}
-
-.citation{
-
-    font-size: 1.1em;
-    font-style: italic;
-
 }
 
 .portfolio-thumb {
-    position: relative;
     margin-bottom: 24px;
-    width: 100%;
+}
+
+.portfolio-row {
+    margin-bottom: 44px;
+    margin-top: 50px;
 }
 
 .avatar {
@@ -779,7 +754,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(98, 74, 20, .6);
+    background-color: rgba(80, 73, 72, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
@@ -796,41 +771,12 @@ h4 {
     background-color: #364577;
 }
 
-p{
-
-    font-size: 1.1em;
-
-}
-
 .bgc-atomic-tangerine {
     background-color: #F3976C;
-    text-align: center;
-}
-
-h1{
-
-    color: #F3976C!important;
-
-}
-
-.page-container2 header{
-
-    text-align: center;
-    margin-bottom: 30px;
-
-}
-
-.page-container2 footer{
-
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
 }
 
 .tc-white {
-    color: white!important;
+    color: #F3976C!important;
 }
 
 .btn-atomic-tangerine {
@@ -864,14 +810,6 @@ h1{
     border-color: #364577!important;
 }
 
-.bg-dots-bg {
-    background-image: url("img/dots-bg.png");
-}
-
-.bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
-}
-
 .bg-banniere {
     background-image: url("img/la-chouette-agence-banniere.jpg");
 }
@@ -880,7 +818,61 @@ h1{
     background-image: url("img/image-de-presentation.jpg");
 }
 
+.img-responsive{
 
+    margin: auto;
+
+}
+
+.menu{
+
+    position: relative;
+    width: 95%;
+
+}
+
+.container{
+
+    margin: auto;
+    text-align: center;
+
+}
+
+.navbar-header img{
+
+    width: 300px;
+
+}
+
+.para{
+
+    margin-bottom: 20px;
+
+}
+
+.menu ul{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+button{
+
+    width: 150px;
+    margin: 0;
+
+}
+
+form{
+
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
 
 @media (max-width: 1024px) {
     .bloc {
@@ -944,6 +936,16 @@ h1{
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
     }
+}
+
+@media screen and (max-width: 768px){
+
+    .marge_bas{
+
+        margin-bottom: 60px;
+
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -1066,6 +1068,7 @@ h1{
     }
     .voffset-lg {
         margin-top: 30px;
+
     }
     form {
         padding: 5px;
@@ -1090,67 +1093,39 @@ h1{
         padding-left: 0;
         padding-right: 0;
     }
-
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
 
+@media screen and (max-width: 426px){
+
+
+    .form-group{
+
+        position: relative;
+        width: 95%;
+        margin: auto;
+
+    }
+
+    form{
+
+        text-align: left;
+
+    }
 
 }
 
-.image_entete{
+@media screen and (max-width: 376px){
 
-    width: 60%;
+    textarea{
 
-}
+        width: 95%;
 
-.entete{
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    }
 
 }
-
-.form-control{
-
-    width: 95%;
-
-}
-
-.form-group{
-
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-#form_1{
-
-    text-align: center;
-
-}
-
-footer{
-
-    text-align: center;
-
-}
-
-@media screen and (min-width: 426px){
-
-.form-control {
-
-    width: 300px;
-    
-}
-
-
-
-}
-
