@@ -1120,6 +1120,16 @@ form{
 
 }
 
+@media screen and (max-width: 769px){
+
+    .portfolio-row img{
+
+        width: 300px;
+
+    }
+
+}
+
 @media screen and (max-width: 376px){
 
     textarea{
