@@ -44,9 +44,9 @@ a:hover {
     padding-right: 0;
 }
 
-/*.bloc-lg {
+.bloc-lg {
     padding: 100px 50px;
-}*/
+}
 
 .bloc-md {
     padding: 50px;
@@ -88,6 +88,10 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+.texture-paper::before {
+    background-size: 280px 280px;
 }
 
 .b-parallax {
@@ -534,6 +538,7 @@ a[data-lightbox] {
 a[data-lightbox]:hover::before {
     content: "+";
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+    font-display: swap;
     font-size: 32px;
     width: 50px;
     height: 50px;
@@ -645,10 +650,13 @@ label,
 .btn,
 a {
     font-family: "helvetica";
+    font-display: swap;
     font-weight: 400;
     color: #575757!important;
 }
-
+label{
+    font-size: 17px;
+}
 .container {
     max-width: 1000px;
 }
@@ -671,16 +679,6 @@ a {
     margin: auto auto auto auto;
 }
 
-p {
-    font-size: 1em;
-}
-
-.citation{
-
-    font-style: italic;
-
-}
-
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
@@ -689,9 +687,11 @@ p {
 .h1 {
     font-size: 20px;
     font-family: "Open Sans";
+    font-display: swap;
 }
 
 .cta-hero {
+    margin-top: 22px;
     color: #FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
@@ -700,9 +700,8 @@ p {
 }
 
 .social {
-    margin-right: 10px;
-    display: flex;
-    justify-content: center;
+    max-width: 400px;
+    margin: auto auto auto auto;
 }
 
 h2 {
@@ -717,11 +716,11 @@ h3 {
     color: #333333!important;
 }
 
-/*.med-width-whitespace {
+.med-width-whitespace {
     max-width: 800px;
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
-}*/
+}
 
 h1 {
     color: #333333!important;
@@ -754,7 +753,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(80, 73, 72, 0.7);
+    background-color: rgb(73, 70, 60);
     padding: 40px 40px 40px 40px;
 }
 
@@ -772,7 +771,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #64605f;
 }
 
 .tc-white {
@@ -809,69 +808,12 @@ h4 {
     color: #364577!important;
     border-color: #364577!important;
 }
-
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la-chouette-agence-banniere.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.jpg");
-}
-
-.img-responsive{
-
-    margin: auto;
-
-}
-
-.menu{
-
-    position: relative;
-    width: 95%;
-
-}
-
-.container{
-
-    margin: auto;
-    text-align: center;
-
-}
-
-.navbar-header img{
-
-    width: 300px;
-
-}
-
-.para{
-
-    margin-bottom: 20px;
-
-}
-
-.menu ul{
-
-    display: flex;
-    flex-direction: column;
-
-}
-
-button{
-
-    width: 150px;
-    margin: 0;
-
-}
-
-form{
-
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-
+    background-image: url("img/image-de-presentation.webp");
 }
 
 @media (max-width: 1024px) {
@@ -936,16 +878,6 @@ form{
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
     }
-}
-
-@media screen and (max-width: 768px){
-
-    .marge_bas{
-
-        margin-bottom: 60px;
-
-    }
-
 }
 
 @media (max-width: 767px) {
@@ -1068,7 +1000,6 @@ form{
     }
     .voffset-lg {
         margin-top: 30px;
-
     }
     form {
         padding: 5px;
@@ -1101,41 +1032,30 @@ form{
     }
 }
 
-@media screen and (max-width: 426px){
-
-
-    .form-group{
-
-        position: relative;
-        width: 95%;
-        margin: auto;
-
-    }
-
-    form{
-
-        text-align: left;
-
-    }
-
+.text-white{
+    color: #FFF !important;
 }
 
-@media screen and (max-width: 769px){
-
-    .portfolio-row img{
-
-        width: 300px;
-
-    }
-
+.focus-black{
+    border: 2px solid transparent !important;
 }
 
-@media screen and (max-width: 376px){
+.focus-black:focus{
+    border: 2px solid black !important;
+}
 
-    textarea{
+.focus-white{
+    border: 2px solid transparent !important;
+}
 
-        width: 95%;
+.focus-white:focus{
+    border: 2px solid white !important;
+}
 
-    }
+.focus-white-icon{
+    font-display: swap;
+}
 
+.focus-white-icon:focus{
+    border-bottom: 2px solid white;
 }
